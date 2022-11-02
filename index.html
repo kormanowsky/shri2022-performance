@@ -16,7 +16,44 @@
           content="width=device-width, initial-scale=1.0">
     <title>Яндекс.Дом</title>
     <!--<link rel="preload" as="font" href="assets/lato.woff2" type="font/woff2" crossorigin="anonymous">
-    --><link rel="stylesheet" type="text/css" href="reset.css">
+    -->
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -61,9 +98,9 @@
                             <span class="a11y-hidden">°</span>
 
                             <div
-                                class="hero-dashboard__icon hero-dashboard__icon_rain"
-                                role="img"
-                                aria-label="Дождь"
+                                    class="hero-dashboard__icon hero-dashboard__icon_rain"
+                                    role="img"
+                                    aria-label="Дождь"
                             ></div>
                         </div>
                     </li>
@@ -148,15 +185,26 @@
             </select>
 
             <ul role="tablist" class="section__tabs">
-                <li role="tab" aria-selected="true" tabindex="0" class="section__tab section__tab_active" id="tab_all" aria-controls="panel_all" data-id="all">Все</li>
-                <li role="tab" aria-selected="false" class="section__tab" id="tab_kitchen" aria-controls="panel_kitchen" data-id="kitchen">Кухня</li>
-                <li role="tab" aria-selected="false" class="section__tab" id="tab_hall" aria-controls="panel_hall" data-id="hall">Зал</li>
-                <li role="tab" aria-selected="false" class="section__tab" id="tab_lights" aria-controls="panel_lights" data-id="lights">Лампочки</li>
-                <li role="tab" aria-selected="false" class="section__tab" id="tab_cameras" aria-controls="panel_cameras" data-id="cameras">Камеры</li>
+                <li role="tab" aria-selected="true" tabindex="0" class="section__tab section__tab_active" id="tab_all"
+                    aria-controls="panel_all" data-id="all">Все
+                </li>
+                <li role="tab" aria-selected="false" class="section__tab" id="tab_kitchen" aria-controls="panel_kitchen"
+                    data-id="kitchen">Кухня
+                </li>
+                <li role="tab" aria-selected="false" class="section__tab" id="tab_hall" aria-controls="panel_hall"
+                    data-id="hall">Зал
+                </li>
+                <li role="tab" aria-selected="false" class="section__tab" id="tab_lights" aria-controls="panel_lights"
+                    data-id="lights">Лампочки
+                </li>
+                <li role="tab" aria-selected="false" class="section__tab" id="tab_cameras" aria-controls="panel_cameras"
+                    data-id="cameras">Камеры
+                </li>
             </ul>
         </div>
 
-        <div role="tabpanel" class="section__panel" aria-hidden="false" id="panel_all" aria-labelledby="tab_all" data-id="all">
+        <div role="tabpanel" class="section__panel" aria-hidden="false" id="panel_all" aria-labelledby="tab_all"
+             data-id="all">
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
@@ -210,7 +258,8 @@
             </ul>
         </div>
 
-        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_kitchen" aria-labelledby="tab_kitchen" data-id="kitchen">
+        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_kitchen"
+             aria-labelledby="tab_kitchen" data-id="kitchen">
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
@@ -229,7 +278,8 @@
             </ul>
         </div>
 
-        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_hall" aria-labelledby="tab_hall" data-id="hall">
+        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_hall"
+             aria-labelledby="tab_hall" data-id="hall">
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
@@ -248,7 +298,8 @@
             </ul>
         </div>
 
-        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_lights" aria-labelledby="tab_lights" data-id="lights">
+        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_lights"
+             aria-labelledby="tab_lights" data-id="lights">
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
@@ -281,7 +332,8 @@
             </ul>
         </div>
 
-        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_cameras" aria-labelledby="tab_cameras" data-id="cameras">
+        <div role="tabpanel" class="section__panel section__panel_hidden" aria-hidden="true" id="panel_cameras"
+             aria-labelledby="tab_cameras" data-id="cameras">
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
