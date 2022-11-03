@@ -962,7 +962,7 @@
     <script>
         (() => {
             function e(e, t, a) {
-                Array.from(e).forEach((e => {
+                e.forEach((e => {
                     e.addEventListener(t, a)
                 }))
             }
@@ -1003,7 +1003,7 @@
             }
 
             document.addEventListener("DOMContentLoaded", (() => {
-                Array.from(document.querySelectorAll(".main__devices")).forEach(a), Array.from(document.querySelectorAll(".header__menu")).forEach(i)
+                document.querySelectorAll(".main__devices").forEach(a), document.querySelectorAll(".header__menu").forEach(i)
             }))
         })();
 
